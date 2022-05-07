@@ -26,7 +26,21 @@ for fila, columna in orden:
                 continue
             elementos[letras[i] + str(numero_fila) + str(numero_columna)] = input(f'Ingrese el elemento {letras[i]}{numero_fila}{numero_columna}: ')
             elementos[letras[i] + str(numero_fila) + str(numero_columna)] = int(elementos[letras[i] + str(numero_fila) + str(numero_columna)])
+    matrices[letras[i]] = elementos
+    elementos = {}
     i = i + 1
 
-print(elementos)
-# matrices[letras[i]] = {}
+print(matrices)
+print(matrices['a'])
+
+# resultado = {}
+
+
+# for fila, columna in orden:
+#     for numero_fila in range(fila + 1):
+#         if numero_fila == 0:
+#             continue
+#         for numero_columna in range(columna + 1):
+#             if numero_columna == 0:
+#                 continue
+#             resultado[letras[i + 1] + str(numero_fila) + str(numero_columna)] = elementos['a11'] * elementos['b11']
